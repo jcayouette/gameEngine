@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.newdawn.slick.opengl.Texture"/>
+<fullyQualifiedTypeName name="org.newdawn.slick.opengl.TextureLoader"/>
+<fullyQualifiedTypeName name="textures.ModelTexture"/>
+<fullyQualifiedTypeName name="models.TexturedModel"/>
+</qualifiedTypeNameHistroy>
