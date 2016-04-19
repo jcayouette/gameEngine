@@ -2,11 +2,13 @@ package engineTester;
 
 import org.lwjgl.opengl.Display;
 
+import models.RawModel;
+import models.TexturedModel;
 import renderEngine.DisplayManager;
 import renderEngine.Loader;
-import renderEngine.RawModel;
 import renderEngine.Renderer;
 import shaders.StaticShader;
+import textures.ModelTexture;
 
 public class MainGameLoop {
 
@@ -34,13 +36,16 @@ public class MainGameLoop {
         };
         
         RawModel model = loader.loadToVAO(vertices, indices);
+        ModelTexture texture = new ModelTexture(loader.loadTexture("ship"));
+        TexturedModel texturedModel = new TexturedModel(model, texture);
         
-        //While display is updating check if a close is requested then execute close display.
+        //While display updates check if a close is requested then execute close display.
+        
         while(!Display.isCloseRequested()) {
         	//game logic
         	renderer.prepare();
         	shader.start();
-        	renderer.render(model);
+        	renderer.render(texturedModel);
         	shader.stop();
         	DisplayManager.updateDisplay();
         }

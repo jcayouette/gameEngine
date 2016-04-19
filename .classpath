@@ -2,12 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/coyote/workspace/gameEngine/lib/jars/lwjgl.jar" sourcepath="/home/coyote/workspace/gameEngine/lib/src">
+	<classpathentry kind="lib" path="C:/Users/coyote/Documents/GitHub/gameEngine/lib/jars/lwjgl.jar" sourcepath="/home/coyote/workspace/gameEngine/lib/src">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/coyote/workspace/gameEngine/lib/natives-linux"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/coyote/Documents/GitHub/gameEngine/lib/natives-win"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/coyote/workspace/gameEngine/lib/jars/lwjgl_util.jar"/>
-	<classpathentry kind="lib" path="/home/coyote/workspace/gameEngine/lib/jars/slick-util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/coyote/Documents/GitHub/gameEngine/lib/jars/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/coyote/Documents/GitHub/gameEngine/lib/jars/slick-util.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
