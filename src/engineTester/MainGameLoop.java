@@ -13,7 +13,6 @@ import textures.ModelTexture;
 public class MainGameLoop {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
         DisplayManager.createDisplay();
         
         Loader loader = new Loader();
@@ -35,7 +34,14 @@ public class MainGameLoop {
         		3,1,2  //bottom right triangle (v3,v1,v2)
         };
         
-        RawModel model = loader.loadToVAO(vertices, indices);
+        float[] textureCoords = {
+        		0,0,	//V0
+        		0,1,	//V1
+        		1,1,	//V2
+        		1,0,	//V3
+        };
+        
+        RawModel model = loader.loadToVAO(vertices, textureCoords, indices);
         ModelTexture texture = new ModelTexture(loader.loadTexture("ship"));
         TexturedModel texturedModel = new TexturedModel(model, texture);
         
