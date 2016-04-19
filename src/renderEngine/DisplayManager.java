@@ -9,18 +9,17 @@ import org.lwjgl.opengl.PixelFormat;
 
 public class DisplayManager {
     //Store height and width of game window in these variables
-	private static final int WIDTH = 1920;
-    private static final int HEIGHT = 1080;
+	private static final int WIDTH = 1024;
+    private static final int HEIGHT = 1024;
     private static final int FPS_CAP = 120;
     
 	//creates the game window
 	public static void createDisplay() {
 		//set the version of OpenGL we will be using in this case 3.2
-		ContextAttribs attribs = new ContextAttribs(3,2);
+		ContextAttribs attribs = new ContextAttribs(3,2)
+				.withForwardCompatible(true)
+				.withProfileCore(true);
 		
-		//allows use of newer OpenGL versions
-		attribs.withForwardCompatible(true);
-		attribs.withProfileCore(true);
 		
 		try {
 			//We need to determine the size of the display
