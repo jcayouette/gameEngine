@@ -22,8 +22,8 @@ public class DisplayManager {
 		
 		
 		try {
-			//We need to determine the size of the display
-			Display.setDisplayMode(new DisplayMode(WIDTH,HEIGHT));
+			//We need to determine the size of the display WIDTH, HEIGHT
+			Display.setDisplayMode(new DisplayMode(WIDTH, HEIGHT));
 			//now we will actually create the display
 			Display.create(new PixelFormat(), attribs);
 			//sets display title

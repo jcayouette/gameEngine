@@ -26,7 +26,6 @@ public class Loader {
 	private List<Integer> vbos = new ArrayList<Integer>();
 	private List<Integer> textures = new ArrayList<Integer>();
 	
-	
 	public RawModel loadToVAO(float[] positions, float[] textureCoords, int[] indices) {
 		/* This method will take in positions of vertices load the data into a VAO then return 
 		 * information about the VAO as a RawModel object.*/
@@ -45,7 +44,7 @@ public class Loader {
 		
 		Texture texture = null;
 		try {
-			texture = TextureLoader.getTexture("JPG", new FileInputStream("res/"+fileName+".jpg"));
+			texture = TextureLoader.getTexture("PNG", new FileInputStream("res/"+fileName+".png"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

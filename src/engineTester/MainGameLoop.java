@@ -42,7 +42,7 @@ public class MainGameLoop {
         };
         
         RawModel model = loader.loadToVAO(vertices, textureCoords, indices);
-        ModelTexture texture = new ModelTexture(loader.loadTexture("ship"));
+        ModelTexture texture = new ModelTexture(loader.loadTexture("pirate-hat"));
         TexturedModel texturedModel = new TexturedModel(model, texture);
         
         //While display updates check if a close is requested then execute close display.
