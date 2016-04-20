@@ -6,22 +6,6 @@ This project represents an exploratory attempt at simulating real world laws and
 
 ###Libaries:
 
-
-####LWJGL3
-
-https://www.lwjgl.org
-
-###Guides and Tutorials
-
-####OpenGL
-https://www.opengl.org/documentation/
-
-####OpenAL
-http://www.openal.org/documentation/
-
-####GLFW
-http://www.glfw.org/docs/latest/
-
 ####LWJGL2
 https://legacy.lwjgl.org
 
@@ -39,6 +23,22 @@ http://legacy.lwjgl.org/documentation_openal_01.php
 
 -----------------------------------------------------------------------------------------------------------------------------
 I would like to eventually migrate to lwjgl version 3 for access to newer features once the initial engine has been completed.
+
+####LWJGL3
+
+https://www.lwjgl.org
+
+###Guides and Tutorials
+
+####OpenGL
+https://www.opengl.org/documentation/
+
+####OpenAL
+http://www.openal.org/documentation/
+
+####GLFW
+http://www.glfw.org/docs/latest/
+
 
 ####LWJGL3
 https://github.com/LWJGL/lwjgl3-wiki/wiki/2.6.-Tutorial-Index
